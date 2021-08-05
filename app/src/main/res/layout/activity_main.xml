@@ -128,5 +128,18 @@
         tools:layout_editor_absoluteX="162dp"
         android:layout_marginTop="60dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ahmad Ridlo Suhardi\nMobile A"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintVertical_bias="0.278" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

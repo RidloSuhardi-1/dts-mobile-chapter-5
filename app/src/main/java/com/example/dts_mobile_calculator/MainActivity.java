@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     numY = Float.parseFloat(inNumY.getText().toString());
                     result = numX + numY;
 
-                    vHasil.setText(String.valueOf(result));
+                    vHasil.setText(numX + " + " + numY + " = " + String.valueOf(result));
                 }
             }
         });
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     numY = Float.parseFloat(inNumY.getText().toString());
                     result = numX - numY;
 
-                    vHasil.setText(String.valueOf(result));
+                    vHasil.setText(numX + " - " + numY + " = " + String.valueOf(result));
                 }
             }
         });
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                     numY = Float.parseFloat(inNumY.getText().toString());
                     result = numX * numY;
 
-                    vHasil.setText(String.valueOf(result));
+                    vHasil.setText(numX + " x " + numY + " = " + String.valueOf(result));
                 }
 
             }
@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
                     numY = Float.parseFloat(inNumY.getText().toString());
                     result = numX / numY;
 
-                    vHasil.setText(String.valueOf(result));
+                    vHasil.setText(numX + " / " + numY + " = " + String.valueOf(result));
                 }
             }
         });
