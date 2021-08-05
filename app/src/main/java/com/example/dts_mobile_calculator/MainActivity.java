@@ -3,6 +3,7 @@ package com.example.dts_mobile_calculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -40,44 +41,61 @@ public class MainActivity extends AppCompatActivity {
         btnTambah.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                numX = Float.parseFloat(inNumX.getText().toString());
-                numY = Float.parseFloat(inNumY.getText().toString());
-                result = numX + numY;
+                if(TextUtils.isEmpty(inNumX.getText().toString()) || TextUtils.isEmpty(inNumY.getText().toString())) {
+                    vHasil.setText("\'Input tidak boleh kosong\'");
+                } else {
+                    numX = Float.parseFloat(inNumX.getText().toString());
+                    numY = Float.parseFloat(inNumY.getText().toString());
+                    result = numX + numY;
 
-                vHasil.setText(String.valueOf(result));
+                    vHasil.setText(String.valueOf(result));
+                }
             }
         });
 
         btnKurang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                numX = Float.parseFloat(inNumX.getText().toString());
-                numY = Float.parseFloat(inNumY.getText().toString());
-                result = numX - numY;
+                if(TextUtils.isEmpty(inNumX.getText().toString()) || TextUtils.isEmpty(inNumY.getText().toString())) {
+                    vHasil.setText("\'Input tidak boleh kosong\'");
+                } else {
+                    numX = Float.parseFloat(inNumX.getText().toString());
+                    numY = Float.parseFloat(inNumY.getText().toString());
+                    result = numX - numY;
 
-                vHasil.setText(String.valueOf(result));
+                    vHasil.setText(String.valueOf(result));
+                }
             }
         });
 
         btnKali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                numX = Float.parseFloat(inNumX.getText().toString());
-                numY = Float.parseFloat(inNumY.getText().toString());
-                result = numX * numY;
+                if(TextUtils.isEmpty(inNumX.getText().toString()) || TextUtils.isEmpty(inNumY.getText().toString())) {
+                    vHasil.setText("\'Input tidak boleh kosong\'");
+                } else {
+                    numX = Float.parseFloat(inNumX.getText().toString());
+                    numY = Float.parseFloat(inNumY.getText().toString());
+                    result = numX * numY;
 
-                vHasil.setText(String.valueOf(result));
+                    vHasil.setText(String.valueOf(result));
+                }
+
             }
         });
 
         btnBagi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                numX = Float.parseFloat(inNumX.getText().toString());
-                numY = Float.parseFloat(inNumY.getText().toString());
-                result = numX / numY;
+                if(TextUtils.isEmpty(inNumX.getText().toString()) || TextUtils.isEmpty(inNumY.getText().toString())) {
+                    vHasil.setText("\'Input tidak boleh kosong\'");
+                } else {
+                    numX = Float.parseFloat(inNumX.getText().toString());
+                    numY = Float.parseFloat(inNumY.getText().toString());
+                    result = numX / numY;
 
-                vHasil.setText(String.valueOf(result));
+                    vHasil.setText(String.valueOf(result));
+                }
             }
         });
 
