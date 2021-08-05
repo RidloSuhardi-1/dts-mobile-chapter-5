@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">DTS-Mobile-Calculator</string>
+    <string name="app_name">DTS Mobile Calculator</string>
+    <string name="input_x">Masukkan nilai pertama ...</string>
+    <string name="input_y">Masukkan nilai kedua ...</string>
 </resources>
